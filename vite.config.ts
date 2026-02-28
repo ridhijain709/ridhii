@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
   return {
     // FIX: This ensures your assets load correctly on GitHub Pages
-    base: '/ridhii/', 
+    base: '/', 
     
     plugins: [react(), tailwindcss()],
     define: {
