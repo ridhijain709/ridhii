@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-ink: #0d0d0d;
+  --color-cream: #f5f0e8;
+  --color-gold: #b8960c;
+  --color-rust: #9b4a1b;
+  --color-paper: #faf7f2;
+}
+
+@layer base {
+  body {
+    @apply bg-paper text-ink font-serif antialiased;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
